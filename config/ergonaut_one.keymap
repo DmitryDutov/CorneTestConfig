@@ -39,7 +39,7 @@
         default_layer {
             bindings = <
 &mt TILDE ESCAPE  &kp Q  &kp W      &kp E       &kp R      &kp T          &kp Y          &kp U            &kp I       &kp O      &kp P                &mt RIGHT_BRACE LEFT_BRACE
-&mt LCTRL GRAVE   &kp A  &kp LC(S)  &kp LA(D)   &kp LS(F)  &kp LG(G)      &kp LG(H)      &kp LS(J)        &kp LA(K)   &kp LC(L)  &mt COLON SEMICOLON  &mt DOUBLE_QUOTES SQT
+&mt LCTRL GRAVE   &kp A  &kp LC(S)  &kp LA(D)   &kp LS(F)  &kp LG(G)      &kp LG(H)      &kp LS(J)        &kp LA(K)   &kp LC(L)  &mt COLON SEMICOLON  &mt LEFT_CONTROL SQT
 &mt LALT MINUS    &kp Z  &kp X      &kp C       &kp V      &kp B          &kp N          &kp M            &kp COMMA   &kp DOT    &kp FSLH             &mt RALT BSLH
                                     &kp DELETE  &lt 2 TAB  &lt LWR SPACE  &lt LWR ENTER  &lt 2 BACKSPACE  &kp DELETE
             >;
@@ -56,9 +56,9 @@
 
         raise_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp K_SCROLL_UP    &kp HOME        &kp END        &trans     &trans  &kp PRINTSCREEN
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp K_SCROLL_DOWN  &kp PAGE_UP     &kp PAGE_DOWN  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp K_SCROLL_UP    &kp HOME        &kp END        &trans     &trans                          &kp PRINTSCREEN
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT  &mt DOUBLE_QUOTES SINGLE_QUOTE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp K_SCROLL_DOWN  &kp PAGE_UP     &kp PAGE_DOWN  &trans     &trans                          &trans
                         &trans  &trans  &trans  &trans             &trans          &trans
             >;
         };
